@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Logo Icon-->
+    <link rel="shortcut icon" href="./assets/uploads/logo/herbal-removebg-preview.png" type="image/x-icon">
+    <!-- Link GG Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="modal" data-modal>
+
+        <div class="modal-close-overlay" data-modal-overlay></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="newsletter-img">
+                <img src="" alt="subscribe newsletter" width="400" height="400">
+            </div>
+
+            <div class="newsletter">
+
+                <form action="#">
+
+                    <div class="newsletter-header">
+
+                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+                        <p class="newsletter-desc">
+                            Subscribe the <b>Herbal</b> to get latest products and discount update.
+                        </p>
+
+                    </div>
+
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="notification-toast" data-toast>
+
+        <button class="toast-close-btn" data-toast-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="./assets/html/shop.html"  class="shop-sale--link">
+            <div class="toast-banner">
+                <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_product1-600x600.jpg"
+                    width="80" height="70">
+            </div>
+    
+            <div class="toast-detail">
+    
+                <p class="toast-message">
+                    Someone in new just bought
+                </p>
+    
+                <p class="toast-title">
+                    Sed fringilla tempus
+                </p>
+    
+                <p class="toast-meta">
+                    <time datetime="PT2M">2 Minutes</time> ago
+                </p>
+    
+            </div>
+        </a>
+      
+
+    </div>
+
+    <!-- HEADER -->
+    <div class="text-header-top">
+        <p>
+            <a href="#">FLASH SALE: 15% Off Herbal with code HERBAL15</a>
+        </p>
+    </div>
+
+    <header class="myheader">
+        <div class="header-wrapper">
+            <div class="header-box--left">
+                <div class="logo">
+                    <a href="./index.html"><img src="./assets/uploads/logo/herbal.png" alt=""></a>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" name="" id="search" placeholder="Search..." class="search-box--text" onkeyup="searchFunc()" autocomplete="on">
+                    <button class="btn-search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div>
+                <div class="toggle-menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-header">
+            <div class="navbar-box-list">
+                <ul class="navbar-sub" id="navbar-container">
+                    <li class="navbar-sub--item btn-active"><a href="./index.html" class="sub--item-text">Home</a></li>
+                    <li class="navbar-sub--item"><a href="./assets/html/shop.html" class="sub--item-text">Shop</a></li>
+                    <li class="navbar-sub--item"><a href="./assets/html/About.html" class="sub--item-text">About</a></li>
+                    <li class="navbar-sub--item"><a href="./assets/html/404NotFound.html" class="sub--item-text">FAQ</a></li>
+                    <li class="navbar-sub--item"><a href="./assets/html/Contact.html" class="sub--item-text">Contact Us</a></li>
+                    <li class="navbar-sub--item"><a href="./assets/html/shop.html" class="sub--item-text">Buy Now</a></li>
+                </ul>
+            </div>
+            <div class="header-box--right">
+                <ul class="submenu-right">
+                    <li class="submenu-right-item">
+                        <a href="./assets/html/Cart_Page.html" class="item-sub">
+                            <ion-icon name="bag-outline"></ion-icon>
+                            <span class="count">0</span>
+                        </a>
+                    </li>
+                    <li class="submenu-right-item user">
+                        <a href="./assets/html/loginForm.html" id="user-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="droptown-menu--mobile">
+            <li class="navbar-sub--item"><a href="./index.html" class="sub--item-text">Home</a></li>
+            <li class="navbar-sub--item"><a href="./assets/html/shop.html" class="sub--item-text">Shop</a></li>
+            <li class="navbar-sub--item"><a href="./assets/html/About.html" class="sub--item-text">About</a></li>
+            <li class="navbar-sub--item"><a href="./assets/html/404NotFound.html" class="sub--item-text">FAQ</a></li>
+            <li class="navbar-sub--item"><a href="./assets/html/Contact.html" class="sub--item-text">Contact Us</a></li>
+            <li class="navbar-sub--item"><a href="./assets/html/loginForm.html" class="sub--item-text">Sign In</a></li>
+            <li class="navbar-sub--item"><a href="./assets/html/Cart_Page.html" class="sub--item-text">Cart</a></li>
+
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner-big">
+        <div class="banner-big-left">
+            <p class="text-banner-top">Betheme's Herbal</p>
+            <h1 class="text-banner-mid">
+                <span>17</span>
+                <span>fully</span>
+                <span>natural</span> <br>
+                <span>ingredients</span> <br>
+                <span>in</span>
+                <span>1</span>
+                <span>wrap</span>
+            </h1>
+            <a class="btn-banner">
+                Read more
+                <ion-icon name="book-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="banner-big-right">
+            <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_slider_pic.png"
+                alt="Herbal Banner" class="image-banner">
+        </div>
+    </div>
+
+    <!-- PRODUCT -->
+
+    <div class="container-product">
+        <div class="container-product--top">
+            <p class="text-container-top">
+                Curabitur et ligula
+            </p>
+            <h1 class="tilte-container">
+                What are the benefits?
+            </h1>
+            <p class="des-tilte">
+                Maecenas fermentum malesuada. In lacus pede, pulvinar gravida, eros et velit lectus varius egestas,
+                nulla sed nulla ultricies a, aliquet eget, rutrum sollicitudin non, placerat sagittis porta, turpis
+                dolor, ante ipsum primis in dui. Maecenas nec libero wisi.
+            </p>
+        </div>
+        <div class="container-product--bottom">
+            <div class="product-column">
+                <a class="prodcut-item-link" href="#">
+                    <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_1.png"
+                        alt="prod 1">
+                    <hr>
+                    <h4>Forum Caudex</h4>
+                    <p class="des-item--product">
+                        Proin venenatis interdum, dolor nonummy justo at sapien et ultrices tortor lacus rhoncus nunc,
+                        rhoncus et ultrices, sollicitudin quam elit tincidunt euismod felis.
+                    </p>
+                  
+                </a>
+            
+            </div>
+            <div class="product-column">
+                <a class="prodcut-item-link" href="#">
+                    <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_2.png"
+                        alt="prod 1">
+                    <hr>
+                    <h4>Quisque</h4>
+                    <p class="des-item--product">
+                        Sed interdum velit magna. Aliquam nulla. Pellentesque mattis feugiat tempus. Quisque at lorem
+                        lorem hendrerit wisi. Aenean sollicitudin.
+                    </p>
+                   
+                </a>
+                <!-- <span class="cart-price">$555</span>
+                <p href="#" class="add-to--cart">Add to cart
+                    <ion-icon name="cart-outline"></ion-icon>
+                </p> -->
+
+            </div>
+            <div class="product-column">
+                <a class="prodcut-item-link" href="#">
+                    <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_3.png"
+                        alt="prod 1">
+                    <hr>
+                    <h4>Integer est</h4>
+                    <p class="des-item--product">
+                        Duis tempor, sapien massa sit amet tellus. Quisque ultricies lobortis, massa in faucibus at,
+                        aliquet mi odio, in risus. Aliquam nec urna ligula at fermentum orci molestie vitae.
+                    </p>
+                   
+                </a>
+                <!-- <span class="cart-price">$555</span>
+                <p href="#" class="add-to--cart">Add to cart
+                    <ion-icon name="cart-outline"></ion-icon>
+                </p> -->
+            </div>
+
+            <div class="product-column">
+                <a class="prodcut-item-link" href="#">
+                    <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_4.png"
+                        alt="prod 1">
+                    <hr>
+                    <h4>Vestibulum</h4>
+                    <p class="des-item--product">
+                        Nullam vulputate quam. Vestibulum semper tellus. Proin dapibus, accumsan lectus vel ligula
+                        bibendum sapien eget dolor rhoncus laoreet.
+                    </p>
+                    
+                </a>
+                <!-- <span class="cart-price">$555</span>
+                <p href="#" class="add-to--cart">Add to cart
+                    <ion-icon name="cart-outline"></ion-icon>
+                </p> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-section">
+        <div class="about-section-group">
+            <div class="section-group--left">
+                <div class="image-wrapper">
+                    <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_logo_small.png"
+                        alt="About image">
+                </div>
+                <div class="about-title">
+                    <h2 class="title-top">Herbal</h2>
+                    <span class="title-top--small">Original natural herbs</span>
+                    <p class="title-bottom">Aenean scelerisque, ligula non nibh justo, at sagittis vel, varius nec,
+                        pharetra eget, bibendum a, posuere orci. Sed vel mauris viverra est vitae sapien vitae.</p>
+                    <p class="title-bottom">Suspendisse justo euismod quis, venenatis convallis aliquam id, vehicula
+                        dolor eu odio. Nunc semper, nisl pede, at blandit tempus vitae, pede. Vestibulum ante ipsum
+                        pharetra dapibus.</p>
+                </div>
+                <a href="#" class="btn-about">
+                    Read more
+                    <ion-icon name="reader-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="section-group--right">
+                <div class="slider">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+
+                    <div class="slide first">
+                        <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_contentslider3.png"
+                            alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_contentslider1.png"
+                            alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_contentslider2.png"
+                            alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1">
+                        </div>
+                        <div class="auto-btn2">
+                        </div>
+                        <div class="auto-btn3">
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ads products -->
+    <div class="ads-section">
+        <div class="image-ads--top">
+            <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_pic1.png" alt="">
+
+        </div>
+
+        <div class="ads-text">
+            <p>Cras lacus egestas</p>
+            <h3>Aenean scelerisque sem. Cras faucibus arcu vel lorem. In quam porta tellus rutrum nulla, placerat
+                scelerisque, diam. Aenean posuere tristique libero.
+            </h3>
+        </div>
+        <div class="ads-btn">
+            <a href="" class="ads-btn--item">Read more
+                <ion-icon name="book-outline"></ion-icon>
+            </a>
+            <a href="" class="ads-btn--item">
+                Order now
+                <ion-icon name="cart-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="image-ads--bottom">
+            <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_pic2.png" alt="">
+        </div>
+    </div>
+    <!-- FEEDBACK -->
+    <div class="send-feedback">
+        <div class="feedback-layout">
+            <p class="send-text-top">
+                Caudex Herbal
+            </p>
+            <h3>
+                Send To Message
+            </h3>
+            <form class="send-form">
+                <div class="send-form--input">
+                    <input type="email" id="email" placeholder="Email..." required>
+                    <label for="email"><ion-icon name="mail-outline"></ion-icon></label>
+                    <input type="tel" id="tel" placeholder="Tel: +84" required>
+                    <label for="tel"> <ion-icon name="call-outline"></ion-icon></label>
+                </div>
+    
+                <textarea name="" id="" placeholder="Enter the messegae..." required></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+       
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-box">
+            <ul class="col1">
+                <li>
+                    <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_logo_small.png" alt="">
+                </li>
+                <li>
+                    <p>Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                </li>
+            </ul>
+            <ul class="col2">
+                <li><a href="#">Aliquam</a></li>
+                <li><a href="#">Nulla imperdiet</a></li>
+                <li><a href="#">Quisque</a></li>
+              
+            </ul>
+            <ul class="col3">
+                <li><a href="#">Curabitur</a></li>
+                <li><a href="#">Donec ligula</a></li>
+                <li><a href="#">Vestibulum</a></li>
+                <li><a href="#">Mauris</a></li>
+              
+            </ul>
+            <ul class="col4">
+                <li><a href="#">Vivamus</a></li>
+                <li><a href="#">Etiam commodo</a></li>
+                <li><a href="#">Morbi</a></li>
+            </ul>
+
+            <ul class="col5">
+                <li>Follow us:</li>
+                <li>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="copy-right">
+            <p>&copy; Copy right by Quang Son</p>
+            <p>Ha Noi Polytechnic College</p>
+            <p><ion-icon name="location-outline"></ion-icon> 9:00 A.M, 23 March 2023</p>
+        </div>
+    </footer>
+
+    <div class="scroll-to--top" onclick="backTop()">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/addToCart.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

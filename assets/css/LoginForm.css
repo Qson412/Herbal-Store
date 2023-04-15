@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
+
+header{
+    box-shadow: 0 3px 2px rgba(0,0,0, .2);
+}
+.header-container{
+    padding:30px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.header-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1{
+    font-family: 'Caudex';
+    margin-left: 30px;
+    color: var(--text-color-big);
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-right a{
+    margin: 0 10px;
+    color: var(--text-color);
+    font-family: 'Caudex';
+}
+
+.header-right a:hover{
+    text-decoration: underline;
+}
+
+.wrapper-body{
+    height: auto;
+    width: 100%;
+    background-image: url(https://img.freepik.com/premium-psd/abstract-colorful-gradient-background-psd-modern-windows-desktop-wallpaper-4k-panoramic-size-2022_691560-34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.wrapper-body-style{
+    z-index: 1;
+    margin: 0 auto;
+    display: inline-block;
+    margin: 4% 10%;
+}
+.container{
+    padding: 10% 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    background-color: rgba(254, 218, 218, 0.2);
+    border-radius: 10px;
+}
+
+.container-left,
+.container-right
+{   
+    
+    margin: 10px 20px;
+    font-weight: 500;
+    position: relative;
+    width: 45%;
+    height: auto;
+}
+   
+hr{
+    outline: none;
+    border: 1px solid #fff;
+}
+.container-left h2,
+form h2{
+    font-family: 'Caudex';
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    text-transform:initial;
+}
+
+.container-left p{
+    text-decoration: justify;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color:#fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+
+
+.forget{
+    margin: 20px auto;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: var(--text-color-big);
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+button:hover{
+    background: var(--text-color-big);
+    color: #fff;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.social-login{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.social-link{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 100%;
+    max-width: 140px;
+    background-color: rgba(255,255,255, .2);
+    padding:6px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.social-link p{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.social-login .social-link img{
+    width: 30px;
+    height: 30px;
+}
+#login_home,
+#logOut{
+    display: none;
+}
+@media screen and (max-width: 900px){
+
+  
+    .container-left{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .container-right{
+        width: 100%;
+    }
+
+    .input-box{
+        width: 100%;
+    }
+    section{
+        display: block;
+    }
+}
+
+@media  screen and (max-width:768px){
+ 
+    .form-box{
+        width: 340px;
+    }
+}
+
+
+
+

@@ -1,0 +1,204 @@
+.about-banner{
+    width: 100%;
+    background:#E8EDE6 ;
+}
+
+.about-banner--container{
+    padding: 120px 0 170px 0;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+.banner-text{
+    margin: 0 2%;
+}
+
+.banner-text p{
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #6B7A6B;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-text h1{
+    color: #1c4e2a;
+    font-family: 'Caudex';
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.banner-text button{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    padding: 18px 30px;
+}
+
+.banner-text button a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--text-color-big);
+}
+.banner-text button:hover{
+    background:rgba(234, 234, 234, 1);
+}
+.banner-text button a ion-icon{
+    margin-left: 8px;
+}
+
+.banner-img{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -60px;
+}
+
+.banner-img img{
+    object-fit: contain;
+    background-size: cover;
+}
+.about-section--page{
+    background: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.about-section--wrapper{
+    padding: 10% 10%;
+    margin: 0 auto;
+}
+
+.about-content{
+    margin-bottom: 100px;
+}
+.about-content h2{
+    text-align: center;
+    font-size: 34px;
+    color: #1c4e2a;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Caudex';
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+.about-content--desc{
+    display: flex;
+    justify-content: space-between;
+}
+.about-content--desc p{
+    width: 30%;
+    font-size: 14px;
+    color: #6B7A6B;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.about-body{
+    width: 100%;
+}
+
+.about-body img{
+    width: 100%;
+    background-size: cover;
+    object-fit: contain;
+}
+.about-tabs{
+    margin: 5% auto 3%;
+    max-width: 900px;
+}
+
+.tabs{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.tab-item{
+    font-weight: 600;
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    /* transition: all 0.2s ease; */
+}
+
+.tab-item.tabs-active{
+    color: #D2A550;
+    border-bottom: 2px solid #d2a550;
+}
+
+.tab-pane.tabs-active{
+    display: block;
+}
+.tabs-content{
+    text-align: center;
+    padding: 2% 2%;
+}
+
+.tab-pane{
+    display: none;
+}
+
+.tab-pane h2{
+    font-family: 'Caudex';
+    color: #1c4e2a;
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.tab-pane p{
+    line-height: 20px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.tab-pane .pane-text{
+    margin-bottom: 15px;
+}
+
+
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 1400px) {
+    
+}
+@media screen and (max-width: 900px) {
+    
+}
+@media screen and (max-width:768px) {
+    .banner-text h1{
+        font-size: 40px;
+    }
+    .banner-img{
+        position: absolute;
+        bottom: -40px;
+    }
+    .about-content h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .about-content--desc{
+        display: block;
+    }
+    .about-content--desc p{
+        width: 100%;
+    }
+}
+
+

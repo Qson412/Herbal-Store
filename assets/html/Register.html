@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Logo Icon-->
+    <link rel="shortcut icon" href="../uploads/logo/herbal-removebg-preview.png" type="image/x-icon">
+    <!-- Link GG Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/LoginForm.css">
+
+    <title>Herbal || Sign Up</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="/index.html"> <img src="../uploads/logo/herbal.png" alt="Logo"></a>
+                <!-- <h1>Sign In</h1> -->
+            </div>
+            <div class="header-right">
+                <a href="">Help ? </a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="wrapper-body">
+        <div class="wrapper-body-style">
+            <div class="container">
+                <div class="container-left">
+                    <h2>Welcome to Herbal</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa reiciendis exercitationem saepe
+                        modi accusamus repellendus obcaecati molestiae deserunt tenetur odit amet voluptatum voluptas
+                        odio necessitatibus tempore dolorem expedita, commodi numquam!</p>
+                </div>
+                <hr>
+                <div class="container-right">
+
+                    <section>
+                        <div class="form-box">
+                            <div class="form-value">
+                                <form action="">
+                                    <h2>Sign Up</h2>
+                                    <!-- <div class="input-box">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <input type="text" name="" id="username" required>
+                                        <label for="username">Username</label>
+                                    </div> -->
+
+                                    <div class="input-box">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <input type="text" name="email" id="email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <ion-icon name="eye-off-outline" onclick="ShowHidePass()"></ion-icon>
+                                        <input type="password" name="password" id="password" required>
+                                        <label for="password">Password</label>
+                                    </div>
+
+                                    <button type="button" name="signUp" id="signUp">Sign Up</button>
+                                    <div class="register">
+                                        <p>You have a account ? <a href="./loginForm.html">Sign In</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-box">
+            <ul class="col1">
+                <li>
+                    <img src="https://themes.muffingroup.com/be/herbal/wp-content/uploads/2016/10/home_herbal_logo_small.png"
+                        alt="">
+                </li>
+                <li>
+                    <p>Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                </li>
+            </ul>
+            <ul class="col2">
+                <li><a href="#">Aliquam</a></li>
+                <li><a href="#">Nulla imperdiet</a></li>
+                <li><a href="#">Quisque</a></li>
+
+            </ul>
+            <ul class="col3">
+                <li><a href="#">Curabitur</a></li>
+                <li><a href="#">Donec ligula</a></li>
+                <li><a href="#">Vestibulum</a></li>
+                <li><a href="#">Mauris</a></li>
+
+            </ul>
+            <ul class="col4">
+                <li><a href="#">Vivamus</a></li>
+                <li><a href="#">Etiam commodo</a></li>
+                <li><a href="#">Morbi</a></li>
+            </ul>
+
+            <ul class="col5">
+                <li>Follow us:</li>
+                <li>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="copy-right">
+            <p>&copy; Copy right by Quang Son</p>
+            <p>Ha Noi Polytechnic College</p>
+            <p><ion-icon name="location-outline"></ion-icon> 9:00 A.M, 23 March 2023</p>
+        </div>
+    </footer>
+    <script>
+    function ShowHidePass() {
+    var pass = document.getElementById("password");
+    if (pass.type == "password") {
+    pass.type = "text";
+
+    } else {
+    pass.type = "password";
+    }
+    }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBpytKqM6KW0BFQHZQyL4tzGBpGEYqqbpo",
+            authDomain: "authentication-6ad1a.firebaseapp.com",
+            projectId: "authentication-6ad1a",
+            storageBucket: "authentication-6ad1a.appspot.com",
+            messagingSenderId: "144515115842",
+            appId: "1:144515115842:web:daf415063e0bd5836c76db",
+            measurementId: "G-58LH2LGZ40"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        const auth = getAuth(app);
+
+        document.getElementById("signUp").addEventListener("click", function () {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    swal({
+            title: 'Register Success',
+            icon: 'success',
+        }   
+        ) 
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    swal({
+            title: 'Register Failed',
+            text: 'Email or password is invalid',
+            icon: 'error',
+        }   
+        ) 
+                    // ..
+                });
+        })
+    </script>
+</body>
+
+</html>

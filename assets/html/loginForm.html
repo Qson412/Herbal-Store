@@ -241,15 +241,15 @@
                 }
             });
         });
-        document.getElementById("login_home").addEventListener("click", function(){
-            swal({
-                title: "Welcome to Herbal",
-                text: "You are going to the landing page",
-                icon:"success",
-                timer: 3000,
-                button: ["OK", "Cancel"]
-            })
-        });
+//         document.getElementById("login_home").addEventListener("click", function(){
+//             swal({
+//                 title: "Welcome to Herbal",
+//                 text: "You are going to the landing page",
+//                 icon:"success",
+//                 timer: 3000,
+//                 button: ["OK", "Cancel"]
+//             })
+//         });
         document.getElementById("logOut").addEventListener("click", function () {
             signOut(auth)
                 .then(() => {

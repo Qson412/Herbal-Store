@@ -1468,6 +1468,9 @@
   .btn-about{
     width: 40%;
   }
+  .search-box .btn-search{
+      display:none;
+    }
 }
 
 
